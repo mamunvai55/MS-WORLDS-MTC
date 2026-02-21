@@ -58,7 +58,7 @@
             <div class="space-y-4 text-sm font-medium leading-relaxed text-center">
                 <p>আসসালামু আলাইকুম, সততার সাথে পেমেন্ট করছি। নিয়ম মেনে কাজ করলে ১০০% পেমেন্ট পাবেন ইনশাআল্লাহ 🔥</p>
                 <div class="space-y-2 text-left bg-gray-50 p-3 rounded-lg border border-gray-200">
-                    <p class="flex items-center gap-2"><span class="text-yellow-500">⚡</span> ওয়েবসাইট ভিজিট: 50 কয়েন</p>
+                    <p class="flex items-center gap-2"><span class="text-yellow-500">⚡</span> ওয়েবসাইট ভিজিট: 20 কয়েন</p>
                     <p class="flex items-center gap-2"><span class="text-green-600">💸</span> প্রতি রেফারে: 200 কয়েন</p>
                     <p class="flex items-center gap-2"><span class="text-yellow-600">💰</span> প্রতি বিজ্ঞাপনে: 20 কয়েন</p>
                 </div>
@@ -71,7 +71,7 @@
     </div>
 
     <div id="auth-section" class="min-h-screen p-6 flex-col justify-center main-page">
-        <h1 class="text-4xl font-bold text-center mb-2 text-accent">Taka Income BD</h1>
+        <h1 class="text-4xl font-bold text-center mb-2 text-accent">MS WORLDS MTC</h1>
         <p class="text-center text-gray-400 mb-8">Login or Signup to continue</p>
         <div id="auth-container">
             <div id="login-view">
@@ -665,11 +665,11 @@ apiKey: "AIzaSyCxD2Z3vkZs2jIMOIZsWF9Nvc7apxXOF6A",
                     try {
                         const newCount = (userData.dailyAdCount || 0) + 1;
                         await updateDoc(userRef, { 
-                            balance: (userData.balance || 0) + 50,
+                            balance: (userData.balance || 0) + 20,
                             dailyAdCount: newCount,
                             lastAdWatchDate: today
                         });
-                        userData.balance += 50;
+                        userData.balance += 20;
                         userData.dailyAdCount = newCount;
                         updateUI();
                         showAlert("Task Complete! 20 Coins added.");
@@ -739,7 +739,7 @@ apiKey: "AIzaSyCxD2Z3vkZs2jIMOIZsWF9Nvc7apxXOF6A",
                     const newCount = (userData.dailyAdCount || 0) + 1;
                     await updateDoc(userRef, { dailyAdCount: newCount });
                     userData.dailyAdCount = newCount;
-                    let rewardAmount = 50; 
+                    let rewardAmount = 20; 
                     await updateBalance(rewardAmount);
                     showAlert(`Congratulations! You have won ${rewardAmount} coins.`);
                     updateAdsLeftCount();
